@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo "reda"
+      - echo reda
       - pip3 install -q awscli --upgrade --user
       - yum -q install -y jq
   pre_build:
