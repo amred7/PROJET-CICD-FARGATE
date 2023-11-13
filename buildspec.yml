@@ -3,6 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
+      - echo $(date +%Y%m%d).$BUILD_NUMBER
       - pip3 install -q awscli --upgrade --user
       - yum -q install -y jq
   pre_build:
